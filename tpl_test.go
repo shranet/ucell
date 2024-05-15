@@ -2,14 +2,11 @@ package ucell_tpl_match
 
 import (
 	"encoding/json"
-	"fmt"
 	"log"
 	"math/rand"
 	"os"
 	"path/filepath"
 	"regexp"
-	"strconv"
-	"strings"
 	"testing"
 )
 
@@ -58,7 +55,7 @@ func init() {
 		}
 
 		for _, t := range tests {
-			t.r = createRegexp(t.Tpl)
+			t.r = CreateRegexp(t.Tpl)
 			t.ut = NewUcellTemplate(t.Tpl)
 
 			okRegexpList = append(okRegexpList, t.r)
@@ -110,46 +107,6 @@ func init() {
 	}
 
 	log.Println("Test boshlandi")
-}
-
-var regexReplaces = strings.NewReplacer(
-	"%d{1,1}", "[0-9]+",
-	"%d{1,0}", "[0-9]+( [0-9]+)*",
-	"%w{1,1}", "[a-zа-я0-9]+",
-	"%w{1,0}", "[a-zа-я0-9]+( [a-zа-я0-9]+)*",
-)
-
-var withSuffix = regexp.MustCompile("%[dw]{1,([0-9]+)}[^ ]")
-var others = regexp.MustCompile("%[dw]{1,([0-9]+)}")
-
-func regexReplaceFunction(addSpace bool) func(v string) string {
-	return func(v string) string {
-		n := strings.Split(v, ",")[1]
-		suffix := ""
-		if addSpace {
-			suffix = " " + string(v[len(v)-1])
-			n = n[:len(n)-2]
-		} else {
-			n = n[:len(n)-1]
-		}
-
-		nn, _ := strconv.Atoi(n)
-
-		if v[1] == 'w' {
-			return fmt.Sprintf("[a-zа-я0-9]+( [a-zа-я0-9]+){1,%d}", nn-1) + suffix
-		}
-
-		return fmt.Sprintf("[0-9]+( [0-9]+){1,%d}", nn-1) + suffix
-	}
-}
-
-func createRegexp(tpl string) *regexp.Regexp {
-	tpl = regexReplaces.Replace(cleanTemplate(tpl))
-
-	tpl = withSuffix.ReplaceAllStringFunc(tpl, regexReplaceFunction(true))
-	tpl = others.ReplaceAllStringFunc(tpl, regexReplaceFunction(false))
-
-	return regexp.MustCompile("(?i)^" + tpl + "$")
 }
 
 func isNoTpl(tpl string) bool {

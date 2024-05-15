@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html"
 	"regexp"
+	"strconv"
 	"strings"
 	"time"
 )
@@ -19,6 +20,16 @@ var spaceReplacer = strings.NewReplacer(
 	"\n", " ",
 	"\r", " ",
 )
+
+var regexReplaces = strings.NewReplacer(
+	"%d{1,1}", "[0-9]+",
+	"%d{1,0}", "[0-9]+( [0-9]+)*",
+	"%w{1,1}", "[a-zа-я0-9]+",
+	"%w{1,0}", "[a-zа-я0-9]+( [a-zа-я0-9]+)*",
+)
+
+var withSuffix = regexp.MustCompile("%[dw]{1,([0-9]+)}[^ ]")
+var others = regexp.MustCompile("%[dw]{1,([0-9]+)}")
 
 func cleanMessage(message string) string {
 	message = html.UnescapeString(message)
@@ -60,4 +71,34 @@ func cleanTemplate(tpl string) string {
 
 	cleanTpl := cleanMessage(strings.NewReplacer(oldnew...).Replace(tpl))
 	return strings.NewReplacer(newold...).Replace(regexp.QuoteMeta(cleanTpl))
+}
+
+func regexReplaceFunction(addSpace bool) func(v string) string {
+	return func(v string) string {
+		n := strings.Split(v, ",")[1]
+		suffix := ""
+		if addSpace {
+			suffix = " " + string(v[len(v)-1])
+			n = n[:len(n)-2]
+		} else {
+			n = n[:len(n)-1]
+		}
+
+		nn, _ := strconv.Atoi(n)
+
+		if v[1] == 'w' {
+			return fmt.Sprintf("[a-zа-я0-9]+( [a-zа-я0-9]+){1,%d}", nn-1) + suffix
+		}
+
+		return fmt.Sprintf("[0-9]+( [0-9]+){1,%d}", nn-1) + suffix
+	}
+}
+
+func CreateRegexp(tpl string) *regexp.Regexp {
+	tpl = regexReplaces.Replace(cleanTemplate(tpl))
+
+	tpl = withSuffix.ReplaceAllStringFunc(tpl, regexReplaceFunction(true))
+	tpl = others.ReplaceAllStringFunc(tpl, regexReplaceFunction(false))
+
+	return regexp.MustCompile("(?i)^" + tpl + "$")
 }
