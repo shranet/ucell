@@ -16,7 +16,7 @@ type testData struct {
 
 var testsData [][]*testData
 
-var ut *ucellTemplate
+var ut UcellTemplate
 
 func init() {
 

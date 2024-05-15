@@ -48,7 +48,7 @@ type ucellTemplate struct {
 	items *templateItem
 }
 
-func NewUcellTemplate(tpls ...string) *ucellTemplate {
+func NewUcellTemplate(tpls ...string) UcellTemplate {
 	ut := &ucellTemplate{
 		items: newTemplateItem(true),
 	}
