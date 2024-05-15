@@ -57,3 +57,54 @@ UCELL tomonidan berilgan xujjatlarda %d va %w da har xil belgilar aralashib keli
 `\n` va `\r` lar esa bo'shliq bilan almashtiriladi.
 
 Agar ushbu koida not'g'ri bo'lsa, uni to'g'irlash shart. Chunki ushbu kutubxona a-zа-я0-9 dan tashqari barcha belgilarni tozalab keyin shablonga mosligini tekshiradi.
+
+
+### Test va Benchmark
+
+```
+% go test -bench=. -v
+
+2024/05/16 00:29:35 Fayllarni o'qish
+2024/05/16 00:29:35 Fayllarni tahlil qilish va kerakli obyektlarni yaratish
+2024/05/16 00:29:36 Barcha shablonlar uchun bitta UcellTemplate yaratish
+2024/05/16 00:29:36 Test boshlandi
+=== RUN   TestDonalab
+--- PASS: TestDonalab (0.06s)
+=== RUN   TestHarBirTur
+--- PASS: TestHarBirTur (0.33s)
+=== RUN   TestAll
+--- PASS: TestAll (0.08s)
+=== RUN   TestRegex
+--- PASS: TestRegex (0.02s)
+goos: darwin
+goarch: arm64
+pkg: github.com/shranet/ucell-tpl-match
+BenchmarkAll
+BenchmarkAll-10                    71127             16489 ns/op
+BenchmarkAllRegex
+BenchmarkAllRegex-10                2924            400121 ns/op
+BenchmarkUcellTemplate
+BenchmarkUcellTemplate-10          85605             13243 ns/op
+BenchmarkRegexp
+BenchmarkRegexp-10                233331              4879 ns/op
+PASS
+ok      github.com/shranet/ucell-tpl-match      6.915s
+```
+
+**Natijalar:**
+
+
+| BenchmarkAll     | BenchmarkAllRegex | BenchmarkUcellTemplate | BenchmarkRegexp   |
+|------------------|-------------------|------------------------|-------------------|
+| 16489 ns/op      | 400121 ns/op      | 13243 ns/op            | 4879 ns/op        |
+| 60 646 ta/sekund | 2 499 ta/sekund   | 75 512 ta/sekund       | 204 960 ta/sekund |
+
+
+Ushbu kutubxona har doim regexlar ro'yxatini shakillantirib, har gal uni for/loop yordamida tekshirgandan ancha tez bo'ladi.
+
+Lekin donalab tekshirishga kelganda regex ancha ustunlikka ega.
+
+**Xulosa**
+
+Agar siz bitta SMS ni N ta shablondan birortasiga mosligini tekshirmoqchi bo'lsangiz, ushbu kutubxonadan foydalaning. Agar siz SMS ni ma'lum 10-100 tagacha shablonga mosligini tekshirmoqchi bo'lsangiz regex ro'yxatdan foydalanganingiz ma'qul.
+
