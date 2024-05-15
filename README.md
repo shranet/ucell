@@ -51,9 +51,7 @@ log.Println(ut.IsMatch("salom dunyo"))
 Dastur har bir qo'shilgan shablondan prefix va suffix larni hisobga olgan holda BTREE yaratadi. Tekshirish jarayonida esa shu BTREE dan foydalanadi. Agar shablonlarda prefix va suffix ishlatilmasa kod ancha tez ishlaydi. Qancha ko'p prefix/suffix ishlatilsa, kod shuncha sekinlashadi.
 
 
-<span style="color:red;font-size:2rem">
-Muhim
-</span>
+$${\color{red} Muhim}$$
 
 UCELL tomonidan berilgan xujjatlarda %d va %w da har xil belgilar aralashib kelishi mumkin deyilgan. Lekin tekshiruvlar natijasida esa a-z (lotin harflari), а-я (krill harflari), raqamlar va bo'shliqdan tashqari barcha belgilar tozalanishi aniqlandi.
 `\n` va `\r` lar esa bo'shliq bilan almashtiriladi.
