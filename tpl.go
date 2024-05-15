@@ -39,6 +39,11 @@ type templateItem struct {
 	isEnd bool
 }
 
+type UcellTemplate interface {
+	Add(tpl string)
+	IsMatch(message string) bool
+}
+
 type ucellTemplate struct {
 	items *templateItem
 }
