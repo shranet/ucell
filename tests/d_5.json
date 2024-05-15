@@ -1,0 +1,252 @@
+[
+  {
+    "tpl": "%d %d compare %d %d %d",
+    "ok": "35224858497 16237679138 compare 36625965393 29266056400 40950809136",
+    "no": "play35224858497 field16237679138 compare yard36625965393 west29266056400 imagine40950809136"
+  },
+  {
+    "tpl": "loss %d ten too poor %d involve thus there trade magazine study lay watch %d newspaper %d test %d",
+    "ok": "loss 56920971301 ten too poor 55351497009 involve thus there trade magazine study lay watch 28433293076 newspaper 92757963775 test 83716200006",
+    "no": "loss 56920971301third ten too poor 55351497009late involve thus there trade magazine study lay watch 28433293076manager newspaper 92757963775those test 83716200006piece"
+  },
+  {
+    "tpl": "point both experience husband %d represent %d every %d %d %d",
+    "ok": "point both experience husband 14400905361 represent 97434869606 every 96801495990 8890035376 37234765438",
+    "no": "point both experience husband current14400905361size represent land97434869606one every oil96801495990trip brother8890035376oil benefit37234765438attention"
+  },
+  {
+    "tpl": "%d itself record help %d %d %d %d",
+    "ok": "90667295766 itself record help 54502489216 19239762592 93983816391 48534262003",
+    "no": "able 90667295766 record 54502489216 19239762592 93983816391 48534262003 head"
+  },
+  {
+    "tpl": "nearly career simply %d into %d room win picture %d media %d prevent example %d speech thank economy trouble economic reason sell according simple leader laugh unit so instead leave onto over imagine sense service church will human everybody describe heavy",
+    "ok": "nearly career simply 7486514334 into 43228740221 room win picture 90069329079 media 47674687855 prevent example 68309121611 speech thank economy trouble economic reason sell according simple leader laugh unit so instead leave onto over imagine sense service church will human everybody describe heavy",
+    "no": "nearly career simply buy into quite room win picture her media computer prevent example why speech thank economy trouble economic reason sell according simple leader laugh unit so instead leave onto over imagine sense service church will human everybody describe heavy"
+  },
+  {
+    "tpl": "around so popular %d lot himself whom hope southern news attorney wonder music %d %d cost %d ahead fast these ahead %d particular",
+    "ok": "around so popular 14090857285 lot himself whom hope southern news attorney wonder music 33605043476 45650026926 cost 9888171029 ahead fast these ahead 97192064854 particular",
+    "no": "around so popular get14090857285 lot himself whom hope southern news attorney wonder music American33605043476 too45650026926 cost word9888171029 ahead fast these ahead fall97192064854 particular"
+  },
+  {
+    "tpl": "list %d area idea all food father economy material activity market power among able their seem operation %d %d religious them news say production simply character president miss quality organization American peace %d win shake hit %d report level remember clearly bill accept game message capital but",
+    "ok": "list 27419862334 area idea all food father economy material activity market power among able their seem operation 91641533279 33091193806 religious them news say production simply character president miss quality organization American peace 26656998153 win shake hit 18636796435 report level remember clearly bill accept game message capital but",
+    "no": "list 27419862334affect area idea all food father economy material activity market power among able their seem operation 91641533279program 33091193806Congress religious them news say production simply character president miss quality organization American peace 26656998153it win shake hit 18636796435show report level remember clearly bill accept game message capital but"
+  },
+  {
+    "tpl": "%d %d imagine %d %d %d where mind action",
+    "ok": "13154805534 26488591105 imagine 68919595238 40485283440 29587709518 where mind action",
+    "no": "year13154805534affect car26488591105offer imagine kitchen68919595238open better40485283440pay particular29587709518consider where mind action"
+  },
+  {
+    "tpl": "from other ability face sport production get among accept %d rule surface probably Congress off play factor national rich %d those %d %d enter on gas character %d medical reveal laugh song community visit call lay day",
+    "ok": "from other ability face sport production get among accept 81882722328 rule surface probably Congress off play factor national rich 29899230223 those 3619612385 29065246313 enter on gas character 9232080707 medical reveal laugh song community visit call lay day",
+    "no": "from other ability face sport production get among 81882722328 deep rule surface probably Congress off play factor national 29899230223 field 3619612385 29065246313 speech enter on gas 9232080707 take medical reveal laugh song community visit call lay day"
+  },
+  {
+    "tpl": "doctor seek model person particular radio such cold %d get half painting air program visit tend %d very yard new over put %d think %d my open really worry %d strong will defense discover contain mind statement compare itself sense finally interesting serve sea put as",
+    "ok": "doctor seek model person particular radio such cold 52056425551 get half painting air program visit tend 79178334480 very yard new over put 87479435994 think 81783112389 my open really worry 73840462258 strong will defense discover contain mind statement compare itself sense finally interesting serve sea put as",
+    "no": "doctor seek model person particular radio such cold key get half painting air program visit tend design very yard new over put while think able my open really worry in strong will defense discover contain mind statement compare itself sense finally interesting serve sea put as"
+  },
+  {
+    "tpl": "%d %d %d %d",
+    "ok": "42446950749 40996976071 12978388954 34004966005",
+    "no": "walk42446950749 unit40996976071 in12978388954 foreign34004966005"
+  },
+  {
+    "tpl": "seven %d local %d Mr energy reflect particular wrong firm resource check return reveal only father thought study %d particular %d strong place %d beat increase",
+    "ok": "seven 52682689517 local 11145807953 Mr energy reflect particular wrong firm resource check return reveal only father thought study 95531001975 particular 4996053019 strong place 76520574783 beat increase",
+    "no": "seven 52682689517story local 11145807953smile Mr energy reflect particular wrong firm resource check return reveal only father thought study 95531001975hotel particular 4996053019little strong place 76520574783cup beat increase"
+  },
+  {
+    "tpl": "force indicate %d our former space %d relate right within %d pass address affect drive until test listen window significant site significant its far teach Republican leg thousand million %d modern general %d their sing your address impact",
+    "ok": "force indicate 49498155074 our former space 26474420701 relate right within 5556140173 pass address affect drive until test listen window significant site significant its far teach Republican leg thousand million 61602666581 modern general 93439806773 their sing your address impact",
+    "no": "force indicate way49498155074color our former space teach26474420701top relate right within same5556140173quality pass address affect drive until test listen window significant site significant its far teach Republican leg thousand million treat61602666581garden modern general try93439806773scene their sing your address impact"
+  },
+  {
+    "tpl": "technology %d side fire important %d staff draw %d %d population young rise cover blue %d responsibility worker shoulder claim notice popular window",
+    "ok": "technology 1564622046 side fire important 54412462254 staff draw 73603770952 54683721482 population young rise cover blue 8199105881 responsibility worker shoulder claim notice popular window",
+    "no": "1564622046 around side fire 54412462254 well staff 73603770952 54683721482 role population young rise cover 8199105881 or responsibility worker shoulder claim notice popular window"
+  },
+  {
+    "tpl": "total size own bag father pass special line play %d rate like them %d physical politics appear material page history from group they no statement spend blue serious city country indicate speak moment whether region %d %d pretty minute %d tell star show machine try development hotel",
+    "ok": "total size own bag father pass special line play 31182891647 rate like them 25104023024 physical politics appear material page history from group they no statement spend blue serious city country indicate speak moment whether region 77609105978 21582830772 pretty minute 70635311381 tell star show machine try development hotel",
+    "no": "total size own bag father pass special line play such rate like them free physical politics appear material page history from group they no statement spend blue serious city country indicate speak moment whether region week accept pretty minute nice tell star show machine try development hotel"
+  },
+  {
+    "tpl": "much service meeting call side %d appear prepare wrong civil deep work couple officer %d %d best easy make concern turn %d professor fund money radio eat six back official %d network",
+    "ok": "much service meeting call side 52773752555 appear prepare wrong civil deep work couple officer 35498469607 83411710802 best easy make concern turn 90549180749 professor fund money radio eat six back official 24308444228 network",
+    "no": "much service meeting call side or52773752555 appear prepare wrong civil deep work couple officer above35498469607 stuff83411710802 best easy make concern turn show90549180749 professor fund money radio eat six back official southern24308444228 network"
+  },
+  {
+    "tpl": "president author author task stage way %d spend carry push could none behavior %d well assume model buy %d suddenly story night tough %d both street success man %d century word better anyone protect every on worker capital writer kind person card evidence be will near picture back",
+    "ok": "president author author task stage way 4743783331 spend carry push could none behavior 2314242366 well assume model buy 18879005370 suddenly story night tough 91379755598 both street success man 63082562682 century word better anyone protect every on worker capital writer kind person card evidence be will near picture back",
+    "no": "president author author task stage way 4743783331enjoy spend carry push could none behavior 2314242366major well assume model buy 18879005370ago suddenly story night tough 91379755598get both street success man 63082562682with century word better anyone protect every on worker capital writer kind person card evidence be will near picture back"
+  },
+  {
+    "tpl": "%d %d %d",
+    "ok": "15851927097 7346602186 39510718124",
+    "no": "game15851927097role cost7346602186life single39510718124end"
+  },
+  {
+    "tpl": "allow authority main heart detail although near easy growth writer writer %d into artist %d happy star left beyond he great %d role white never her safe %d although beautiful general actually tonight news myself important when think economy %d real improve student until keep forget positive late air",
+    "ok": "allow authority main heart detail although near easy growth writer writer 32804717891 into artist 4957809562 happy star left beyond he great 987752987 role white never her safe 83900627771 although beautiful general actually tonight news myself important when think economy 53424731703 real improve student until keep forget positive late air",
+    "no": "allow authority main heart detail although near easy growth writer 32804717891 character into 4957809562 down happy star left beyond he 987752987 rather role white never her 83900627771 current although beautiful general actually tonight news myself important when think 53424731703 investment real improve student until keep forget positive late air"
+  },
+  {
+    "tpl": "imagine building build movie stuff light chance prepare they big %d %d %d hope lay image nice teach %d professor %d itself only writer ago service chair entire money attention similar threat they imagine do owner commercial",
+    "ok": "imagine building build movie stuff light chance prepare they big 16229416228 89013594417 41222152225 hope lay image nice teach 14422878746 professor 28771344886 itself only writer ago service chair entire money attention similar threat they imagine do owner commercial",
+    "no": "imagine building build movie stuff light chance prepare they big your gun fall hope lay image nice teach page professor service itself only writer ago service chair entire money attention similar threat they imagine do owner commercial"
+  },
+  {
+    "tpl": "%d list %d easy painting %d %d society his thousand %d group throw statement large middle seven lead structure product quite tax theory",
+    "ok": "2756499066 list 10193142148 easy painting 95207381767 93041347187 society his thousand 99335124673 group throw statement large middle seven lead structure product quite tax theory",
+    "no": "skill2756499066 list peace10193142148 easy painting Congress95207381767 base93041347187 society his thousand must99335124673 group throw statement large middle seven lead structure product quite tax theory"
+  },
+  {
+    "tpl": "%d %d %d %d",
+    "ok": "60185125113 83486951113 20726380307 48264046011",
+    "no": "60185125113final 83486951113company 20726380307none 48264046011explain"
+  },
+  {
+    "tpl": "in skin %d talk huge author gas range sea serve feeling fish per couple use ok will boy region later threat day student share party green personal nearly in %d meeting near project small %d recently sister become clearly off %d although relationship on different heavy drive %d Congress practice",
+    "ok": "in skin 42546459672 talk huge author gas range sea serve feeling fish per couple use ok will boy region later threat day student share party green personal nearly in 3989465515 meeting near project small 17384242473 recently sister become clearly off 81729390699 although relationship on different heavy drive 83306165705 Congress practice",
+    "no": "in skin civil42546459672body talk huge author gas range sea serve feeling fish per couple use ok will boy region later threat day student share party green personal nearly in forget3989465515its meeting near project small especially17384242473left recently sister become clearly off east81729390699population although relationship on different heavy drive reduce83306165705color Congress practice"
+  },
+  {
+    "tpl": "%d across race mother far %d media foreign crime toward her stage assume book certainly include once officer art activity %d talk center hair home %d road be establish collection space figure leader world remain clear total drop choice %d",
+    "ok": "23798449690 across race mother far 44632904471 media foreign crime toward her stage assume book certainly include once officer art activity 76241488007 talk center hair home 21969233098 road be establish collection space figure leader world remain clear total drop choice 44811529944",
+    "no": "them 23798449690 race mother 44632904471 amount media foreign crime toward her stage assume book certainly include once officer art 76241488007 phone talk center hair 21969233098 language road be establish collection space figure leader world remain clear total drop 44811529944 among"
+  },
+  {
+    "tpl": "%d lay attack quickly %d where get %d %d often lay %d check billion miss",
+    "ok": "1611716302 lay attack quickly 79258995011 where get 62186433166 23020743196 often lay 52549223309 check billion miss",
+    "no": "law lay attack quickly staff where get put technology often lay significant check billion miss"
+  },
+  {
+    "tpl": "inside continue %d %d big enough since Republican %d window %d team from fast environment people beautiful citizen %d someone more recognize financial something green reality deal break",
+    "ok": "inside continue 11626224383 59615967770 big enough since Republican 7772173653 window 58839569795 team from fast environment people beautiful citizen 44636637068 someone more recognize financial something green reality deal break",
+    "no": "inside continue happen11626224383 card59615967770 big enough since Republican bed7772173653 window approach58839569795 team from fast environment people beautiful citizen guy44636637068 someone more recognize financial something green reality deal break"
+  },
+  {
+    "tpl": "face especially record look %d TV appear way deal %d someone you data third family %d fire boy machine month cost describe nature meeting mission doctor %d process method grow relationship %d growth",
+    "ok": "face especially record look 96723162760 TV appear way deal 74605264849 someone you data third family 41534758657 fire boy machine month cost describe nature meeting mission doctor 55093866190 process method grow relationship 183955816 growth",
+    "no": "face especially record look 96723162760hit TV appear way deal 74605264849style someone you data third family 41534758657large fire boy machine month cost describe nature meeting mission doctor 55093866190during process method grow relationship 183955816however growth"
+  },
+  {
+    "tpl": "suggest %d %d stand %d different wear %d easy oil design receive %d item pass",
+    "ok": "suggest 23016297951 98067512293 stand 72063974210 different wear 55980483340 easy oil design receive 63559116066 item pass",
+    "no": "suggest today23016297951than physical98067512293remember stand city72063974210foot different wear us55980483340billion easy oil design receive politics63559116066ground item pass"
+  },
+  {
+    "tpl": "miss federal %d former %d wrong civil culture responsibility responsibility step stop evidence %d administration deal help should worry %d themselves %d staff occur west his them other involve American tonight sing war movie message new of good president south network another state the decide picture",
+    "ok": "miss federal 12908038109 former 15895894721 wrong civil culture responsibility responsibility step stop evidence 63738741242 administration deal help should worry 35475583264 themselves 94484006392 staff occur west his them other involve American tonight sing war movie message new of good president south network another state the decide picture",
+    "no": "miss 12908038109 couple 15895894721 election wrong civil culture responsibility responsibility step stop 63738741242 career administration deal help should 35475583264 majority 94484006392 among staff occur west his them other involve American tonight sing war movie message new of good president south network another state the decide picture"
+  },
+  {
+    "tpl": "act position add author nearly officer %d meet light alone %d after father %d %d %d",
+    "ok": "act position add author nearly officer 26760858680 meet light alone 30435229002 after father 8604715204 15715916780 20651039799",
+    "no": "act position add author nearly officer charge meet light alone traditional after father author accept cold"
+  },
+  {
+    "tpl": "race base moment law hard network %d %d camera up fly once %d %d example %d",
+    "ok": "race base moment law hard network 99756516539 7088799860 camera up fly once 24698304003 7201221606 example 82362782872",
+    "no": "race base moment law hard network campaign99756516539 by7088799860 camera up fly once yourself24698304003 toward7201221606 example difficult82362782872"
+  },
+  {
+    "tpl": "member %d indicate by this %d parent red %d pressure hand %d future %d receive moment stop",
+    "ok": "member 71598656189 indicate by this 90749637775 parent red 92201469955 pressure hand 50221444521 future 4261403552 receive moment stop",
+    "no": "member 71598656189research indicate by this 90749637775respond parent red 92201469955natural pressure hand 50221444521every future 4261403552environment receive moment stop"
+  },
+  {
+    "tpl": "fill %d American sing board data stand line remember %d day here economy scientist %d every budget involve hear ask %d relate teach agency page I land road finish finish too father around senior watch %d",
+    "ok": "fill 35626024512 American sing board data stand line remember 59480508824 day here economy scientist 75958292013 every budget involve hear ask 75614889694 relate teach agency page I land road finish finish too father around senior watch 85786928766",
+    "no": "fill family35626024512sport American sing board data stand line remember might59480508824action day here economy scientist traditional75958292013there every budget involve hear ask couple75614889694author relate teach agency page I land road finish finish too father around senior watch tough85786928766minute"
+  },
+  {
+    "tpl": "pay always executive protect anyone dark %d yet add effort sure %d %d audience shake %d realize %d authority prepare decision mouth old education",
+    "ok": "pay always executive protect anyone dark 1324317811 yet add effort sure 96330207074 54786731428 audience shake 71753524905 realize 39527511310 authority prepare decision mouth old education",
+    "no": "pay always executive protect anyone 1324317811 strong yet add effort 96330207074 54786731428 result audience 71753524905 exactly 39527511310 by authority prepare decision mouth old education"
+  },
+  {
+    "tpl": "leave %d card top %d say per term side join know record %d small %d %d level site",
+    "ok": "leave 43351731041 card top 91743956814 say per term side join know record 68908546108 small 17191271347 85962261046 level site",
+    "no": "leave garden card top leg say per term side join know record rate small home state level site"
+  },
+  {
+    "tpl": "hospital say %d other public else one %d majority today particular image here protect catch yeah fill manage score form fact everything realize indeed resource remember moment human authority share %d ago worker %d when %d short nor pressure leader poor past my when add relationship",
+    "ok": "hospital say 89761634159 other public else one 27625934642 majority today particular image here protect catch yeah fill manage score form fact everything realize indeed resource remember moment human authority share 27406589769 ago worker 30710924443 when 10629890131 short nor pressure leader poor past my when add relationship",
+    "no": "hospital say leave89761634159 other public else one tax27625934642 majority today particular image here protect catch yeah fill manage score form fact everything realize indeed resource remember moment human authority share save27406589769 ago worker of30710924443 when power10629890131 short nor pressure leader poor past my when add relationship"
+  },
+  {
+    "tpl": "environment after win stock %d %d reason face local drop smile staff Mr recognize make book culture %d person address establish what bed %d late long stay %d year different future region early without amount down put too seat",
+    "ok": "environment after win stock 70645248806 2205177118 reason face local drop smile staff Mr recognize make book culture 76128164730 person address establish what bed 17012782556 late long stay 51497764772 year different future region early without amount down put too seat",
+    "no": "environment after win stock 70645248806rock 2205177118method reason face local drop smile staff Mr recognize make book culture 76128164730two person address establish what bed 17012782556opportunity late long stay 51497764772mouth year different future region early without amount down put too seat"
+  },
+  {
+    "tpl": "%d heart that actually fear today %d key %d pattern defense me record view long %d now leg part light hot street generation per center paper evening %d back community teach",
+    "ok": "57087140761 heart that actually fear today 69369195522 key 65903527925 pattern defense me record view long 83917640467 now leg part light hot street generation per center paper evening 13274891791 back community teach",
+    "no": "age57087140761buy heart that actually fear today its69369195522pass key maintain65903527925fly pattern defense me record view long national83917640467fast now leg part light hot street generation per center paper evening it13274891791approach back community teach"
+  },
+  {
+    "tpl": "itself %d development sea %d plant %d %d case call charge administration %d effect",
+    "ok": "itself 96041457655 development sea 85243675157 plant 44070331481 94462900180 case call charge administration 39840029560 effect",
+    "no": "96041457655 move development 85243675157 traditional 44070331481 94462900180 skin case call charge 39840029560 late effect"
+  },
+  {
+    "tpl": "cold recent maintain green cold but last close industry %d long far small group these cup try itself find because good %d %d %d language government result school state energy step guy yourself %d draw stage life thousand",
+    "ok": "cold recent maintain green cold but last close industry 5532943802 long far small group these cup try itself find because good 62706824708 40559347383 13443487220 language government result school state energy step guy yourself 56915759601 draw stage life thousand",
+    "no": "cold recent maintain green cold but last close industry deal long far small group these cup try itself find because good positive owner home language government result school state energy step guy yourself office draw stage life thousand"
+  },
+  {
+    "tpl": "try memory avoid movement %d %d %d establish major fast speak wear himself %d away those theory weight stage image project body ten live %d important current while management official",
+    "ok": "try memory avoid movement 6691956148 10366352435 90056200907 establish major fast speak wear himself 43476934854 away those theory weight stage image project body ten live 56502377547 important current while management official",
+    "no": "try memory avoid movement son6691956148 couple10366352435 dream90056200907 establish major fast speak wear himself beautiful43476934854 away those theory weight stage image project body ten live shake56502377547 important current while management official"
+  },
+  {
+    "tpl": "should song politics %d %d job suffer medical %d %d have leg himself build %d sometimes cold even free too necessary",
+    "ok": "should song politics 49450702889 28209241504 job suffer medical 88512397714 50366162894 have leg himself build 41705802440 sometimes cold even free too necessary",
+    "no": "should song politics 49450702889because 28209241504their job suffer medical 88512397714hold 50366162894sister have leg himself build 41705802440minute sometimes cold even free too necessary"
+  },
+  {
+    "tpl": "food %d %d it %d %d election tough usually %d go",
+    "ok": "food 5439557015 10810692198 it 44344879660 29001683532 election tough usually 87631370494 go",
+    "no": "food too5439557015too soon10810692198owner it value44344879660this camera29001683532building election tough usually technology87631370494character go"
+  },
+  {
+    "tpl": "wall structure prevent chair traditional energy window same %d make %d material far raise each %d %d %d job",
+    "ok": "wall structure prevent chair traditional energy window same 30427391551 make 94903572665 material far raise each 60114107429 78759365481 83244810532 job",
+    "no": "wall structure prevent chair traditional energy window 30427391551 bag 94903572665 it material far raise 60114107429 78759365481 83244810532 summer job"
+  },
+  {
+    "tpl": "hard sit %d %d fill %d but particularly %d %d",
+    "ok": "hard sit 65122565279 81442919490 fill 18024634460 but particularly 19458038929 39132270537",
+    "no": "hard sit rule trouble fill red but particularly bar leg"
+  },
+  {
+    "tpl": "%d defense character pick attorney turn member %d %d beyond %d song %d director close",
+    "ok": "63355301227 defense character pick attorney turn member 8999969175 34304969619 beyond 40473184032 song 25321436246 director close",
+    "no": "note63355301227 defense character pick attorney turn member guess8999969175 what34304969619 beyond teacher40473184032 song cost25321436246 director close"
+  },
+  {
+    "tpl": "%d %d %d %d %d",
+    "ok": "38626562721 83126286916 31277044602 92315732220 13521681006",
+    "no": "38626562721million 83126286916agent 31277044602likely 92315732220feel 13521681006international"
+  },
+  {
+    "tpl": "be less still man decision seven market state heart bag %d %d trial long support into group total %d rest across green recent form soldier %d %d",
+    "ok": "be less still man decision seven market state heart bag 33595201124 82632554138 trial long support into group total 70002866137 rest across green recent form soldier 51733139720 73844570634",
+    "no": "be less still man decision seven market state heart bag next33595201124reach test82632554138mind trial long support into group total respond70002866137today rest across green recent form soldier mother51733139720since easy73844570634morning"
+  },
+  {
+    "tpl": "listen realize near assume %d where %d %d create %d wear %d me investment",
+    "ok": "listen realize near assume 37075950458 where 18887808908 62230050204 create 76588564437 wear 32643893844 me investment",
+    "no": "listen realize near 37075950458 book 18887808908 62230050204 open 76588564437 fall 32643893844 although me investment"
+  },
+  {
+    "tpl": "raise %d pull together maybe discussion subject take believe capital necessary paper financial hit sit two once %d %d %d discuss attack PM deal enter training %d deep early benefit often new in",
+    "ok": "raise 9919122949 pull together maybe discussion subject take believe capital necessary paper financial hit sit two once 41721689292 4143790748 95377039861 discuss attack PM deal enter training 41040940440 deep early benefit often new in",
+    "no": "raise clearly pull together maybe discussion subject take believe capital necessary paper financial hit sit two once statement economic so discuss attack PM deal enter training together deep early benefit often new in"
+  }
+]

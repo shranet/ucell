@@ -23,5 +23,4 @@ go.work
 .idea
 /test_data*.json
 /template.csv
-
-*_test.go
+/tpl_json_test.go

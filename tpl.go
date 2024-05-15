@@ -68,16 +68,16 @@ func (t *ucellTemplate) Add(tpl string) {
 		switch {
 		case digitRangeEqual.MatchString(word):
 			n, _ := strconv.Atoi(digitRangeEqual.FindStringSubmatch(word)[1])
-			current = addStaticPattern(current, patternKeyDigit, n, isLastWord)
+			current = addEqualPattern(current, patternKeyDigit, n, isLastWord)
 		case digitRangeContains.MatchString(word):
 			n, _ := strconv.Atoi(digitRangeContains.FindStringSubmatch(word)[1])
-			current = addRegexPattern(current, patternKeyDigit, word, n, isLastWord)
+			current = addContainsPattern(current, patternKeyDigit, word, n, isLastWord)
 		case wordRangeEqual.MatchString(word):
 			n, _ := strconv.Atoi(wordRangeEqual.FindStringSubmatch(word)[1])
-			current = addStaticPattern(current, patternKeyWord, n, isLastWord)
+			current = addEqualPattern(current, patternKeyWord, n, isLastWord)
 		case wordRangeContains.MatchString(word):
 			n, _ := strconv.Atoi(wordRangeContains.FindStringSubmatch(word)[1])
-			current = addRegexPattern(current, patternKeyWord, word, n, isLastWord)
+			current = addContainsPattern(current, patternKeyWord, word, n, isLastWord)
 		default:
 			if c, ok := current.children[word]; ok {
 				current = c
@@ -101,9 +101,7 @@ func (t *ucellTemplate) IsMatch(message string) bool {
 	cleanMsg := strings.ToLower(cleanMessage(message))
 
 	if len(cleanMsg) == 0 {
-		//Agar empty string kelsa
-		//shablonlar ham yo'qligiga ishonch hosil qilish kerak
-		return t.items == nil
+		return t.items.isEnd
 	}
 
 	words := strings.Split(cleanMsg, " ")
@@ -115,18 +113,19 @@ func isMatch(current *templateItem, words []string) bool {
 		return current.isEnd
 	}
 
-	//Agar suffix kelsa, demak %d yoki %w shablon bo'yicha tekshirish boshlanga
-	//Shu so'zning o'zi borligiga tekshiramiz
+	//shablonsiz so'zning o'zini tekshirish
 	if c, ok := current.children[words[0]]; ok {
 		if isMatch(c, words[1:]) {
 			return true
 		}
 	}
 
+	//%d shablonga tekshirish
 	if matchDigit(current, words) {
 		return true
 	}
 
+	//%w shablonga tekshirish
 	if matchWord(current, words) {
 		return true
 	}
@@ -204,7 +203,7 @@ func matchDigit(current *templateItem, words []string) bool {
 			}
 
 			if !isDigit.MatchString(currentWord) {
-				continue
+				break
 			}
 
 			if isMatch(pi.children, words[i+1:]) {
@@ -239,7 +238,7 @@ func matchWord(current *templateItem, words []string) bool {
 			//qolganini oddiy tekshiramiz
 			for i, w := range words[1:] {
 				if i >= pi.max {
-					return false
+					break
 				}
 
 				if w != pi.suffix {
@@ -268,6 +267,16 @@ func matchWord(current *templateItem, words []string) bool {
 				if pi.suffix == currentWord || !strings.HasSuffix(currentWord, pi.suffix) {
 					continue
 				}
+
+				currentWord = currentWord[:len(currentWord)-len(pi.suffix)]
+			}
+
+			if i == 0 && pi.prefix != "" {
+				currentWord = currentWord[len(pi.prefix):]
+			}
+
+			if len(currentWord) == 0 {
+				break
 			}
 
 			if isMatch(pi.children, words[i+1:]) {
@@ -279,7 +288,7 @@ func matchWord(current *templateItem, words []string) bool {
 	return false
 }
 
-func addStaticPattern(current *templateItem, key, n int, isEnd bool) *templateItem {
+func addEqualPattern(current *templateItem, key, n int, isEnd bool) *templateItem {
 	//agar prefix va suffix mavjud bo'lmasa
 	for _, pi := range current.patternChildren[key] {
 		if pi.max == n && pi.prefix == "" && pi.suffix == "" {
@@ -297,11 +306,12 @@ func addStaticPattern(current *templateItem, key, n int, isEnd bool) *templateIt
 	return item
 }
 
-func addRegexPattern(current *templateItem, key int, word string, n int, isEnd bool) *templateItem {
+func addContainsPattern(current *templateItem, key int, word string, n int, isEnd bool) *templateItem {
+	//agar prefix va suffix mavjud bo'lsa
+
 	keyword := fmt.Sprintf("%%%s{1,%d}", keyLetter[key], n)
 	parts := strings.Split(word, keyword)
 
-	//agar prefix va suffix mavjud bo'lmasa
 	for _, pi := range current.patternChildren[key] {
 		if pi.max == n && pi.prefix == parts[0] && pi.suffix == parts[1] {
 			return pi.children
