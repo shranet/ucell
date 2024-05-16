@@ -1,4 +1,4 @@
-# ucell-tpl-match
+# Izoh
 UCELL kompaniyasi servis SMS shablonlarini tekshirish kutubxonasi
 
 ### UCELL qanday tekshiradi
@@ -25,7 +25,7 @@ Agar prefix va suffix `%d{1,n}`, `%w{1,n}` bilan birgalikda kelsa, prefix birinc
 
 **O'rnatish**
 
-`go get github.com/shranet/ucell-tpl-match`
+`go get github.com/shranet/ucell`
 
 **Foydalanish**
 ```go
@@ -56,7 +56,7 @@ $${\color{red} Muhim}$$
 UCELL tomonidan berilgan xujjatlarda %d va %w da har xil belgilar aralashib kelishi mumkin deyilgan. Lekin tekshiruvlar natijasida esa a-z (lotin harflari), а-я (krill harflari), raqamlar va bo'shliqdan tashqari barcha belgilar tozalanishi aniqlandi.
 `\n` va `\r` lar esa bo'shliq bilan almashtiriladi.
 
-Agar ushbu koida not'g'ri bo'lsa, uni to'g'irlash shart. Chunki ushbu kutubxona a-zа-я0-9 dan tashqari barcha belgilarni tozalab keyin shablonga mosligini tekshiradi.
+Agar ushbu qoida noto'g'ri bo'lsa, uni to'g'irlash shart. Chunki ushbu kutubxona a-zа-я0-9 dan tashqari barcha belgilarni tozalab keyin shablonga mosligini tekshiradi.
 
 
 ### Test va Benchmark

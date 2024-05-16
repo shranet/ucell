@@ -1,4 +1,4 @@
-package ucell_tpl_match
+package ucell
 
 import (
 	"encoding/json"
