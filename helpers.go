@@ -102,3 +102,7 @@ func CreateRegexp(tpl string) *regexp.Regexp {
 
 	return regexp.MustCompile("(?i)^" + tpl + "$")
 }
+
+func IsMatch(r *regexp.Regexp, message string) bool {
+	return r.MatchString(cleanMessage(message))
+}
