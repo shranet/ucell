@@ -31,7 +31,7 @@ var regexReplaces = strings.NewReplacer(
 var withSuffix = regexp.MustCompile("%[dw]{1,([0-9]+)}[^ ]")
 var others = regexp.MustCompile("%[dw]{1,([0-9]+)}")
 
-func cleanMessage(message string) string {
+func CleanMessage(message string) string {
 	message = html.UnescapeString(message)
 	message = spaceReplacer.Replace(message)
 	message = nonLatinCyrillicRegex.ReplaceAllString(message, "")
@@ -39,7 +39,7 @@ func cleanMessage(message string) string {
 	return strings.Trim(whiteSpaceRegex.ReplaceAllString(message, " "), " ")
 }
 
-func cleanTemplate(tpl string) string {
+func CleanTemplate(tpl string) string {
 	prefix := fmt.Sprintf("ucelltpl%d", time.Now().UnixMilli())
 
 	tplKey := func(key string) string {
@@ -69,7 +69,7 @@ func cleanTemplate(tpl string) string {
 	addOldNew("%w", tplKey("w"), "%w{1,1}")
 	addOldNew("%d", tplKey("d"), "%d{1,1}")
 
-	cleanTpl := cleanMessage(strings.NewReplacer(oldnew...).Replace(tpl))
+	cleanTpl := CleanMessage(strings.NewReplacer(oldnew...).Replace(tpl))
 	return strings.NewReplacer(newold...).Replace(regexp.QuoteMeta(cleanTpl))
 }
 
@@ -95,7 +95,7 @@ func regexReplaceFunction(addSpace bool) func(v string) string {
 }
 
 func CreateRegexp(tpl string) *regexp.Regexp {
-	tpl = regexReplaces.Replace(cleanTemplate(tpl))
+	tpl = regexReplaces.Replace(CleanTemplate(tpl))
 
 	tpl = withSuffix.ReplaceAllStringFunc(tpl, regexReplaceFunction(true))
 	tpl = others.ReplaceAllStringFunc(tpl, regexReplaceFunction(false))
@@ -104,5 +104,5 @@ func CreateRegexp(tpl string) *regexp.Regexp {
 }
 
 func IsMatch(r *regexp.Regexp, message string) bool {
-	return r.MatchString(cleanMessage(message))
+	return r.MatchString(CleanMessage(message))
 }

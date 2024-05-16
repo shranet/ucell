@@ -61,7 +61,7 @@ func NewUcellTemplate(tpls ...string) UcellTemplate {
 }
 
 func (t *ucellTemplate) Add(tpl string) {
-	cleanTpl := cleanTemplate(tpl)
+	cleanTpl := CleanTemplate(tpl)
 
 	tplWords := strings.Split(strings.ToLower(cleanTpl), " ")
 
@@ -103,7 +103,7 @@ func (t *ucellTemplate) Add(tpl string) {
 }
 
 func (t *ucellTemplate) IsMatch(message string) bool {
-	cleanMsg := strings.ToLower(cleanMessage(message))
+	cleanMsg := strings.ToLower(CleanMessage(message))
 
 	if len(cleanMsg) == 0 {
 		return t.items.isEnd
