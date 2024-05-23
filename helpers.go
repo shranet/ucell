@@ -87,10 +87,10 @@ func regexReplaceFunction(addSpace bool) func(v string) string {
 		nn, _ := strconv.Atoi(n)
 
 		if v[1] == 'w' {
-			return fmt.Sprintf("[a-zа-я0-9]+( [a-zа-я0-9]+){1,%d}", nn-1) + suffix
+			return fmt.Sprintf("[a-zа-я0-9]+( [a-zа-я0-9]+){0,%d}", nn-1) + suffix
 		}
 
-		return fmt.Sprintf("[0-9]+( [0-9]+){1,%d}", nn-1) + suffix
+		return fmt.Sprintf("[0-9]+( [0-9]+){0,%d}", nn-1) + suffix
 	}
 }
 
